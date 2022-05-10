@@ -11,3 +11,7 @@ pool:
 
 steps:
 - bash: echo "Our first Pipeline"
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
